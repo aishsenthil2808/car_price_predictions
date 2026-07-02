@@ -1,0 +1,54 @@
+1. pandas
+import pandas as pd
+Role:
+•Used for loading and handling the dataset.
+•Reads the CSV file into a DataFrame.
+•Helps in data cleaning, preprocessing, and feature selection.
+•Provides functions like head(), info(), describe(), and isnull() to explore the data.
+2. numpy
+import numpy as np
+Role:
+•Used for numerical and mathematical operations.
+•Calculates the square root while computing the Root Mean Squared Error (RMSE).
+•Efficiently handles numerical arrays and computations.
+3. matplotlib.pyplot
+import matplotlib.pyplot as plt
+Role:
+•Used for data visualization.
+Creates graphs such as:
+Feature Importance graph
+•Actual vs Predicted •Pricescatter plot
+•Residual Plot
+•Helps in understanding model performance visually.
+4. train_test_split
+from sklearn.model_selection import train_test_split
+Role:
+•Splits the dataset into training and testing sets.
+•The training set is used to train the model, while the testing set is used to evaluate its performance.
+•Prevents overfitting and ensures reliable evaluation.
+5. LabelEncoder
+from sklearn.preprocessing import LabelEncoder
+Role:
+•Converts categorical data (such as Fuel Type, Seller Type, Transmission, and Car Name) into numerical values.
+•Machine learning algorithms require numerical input, so this preprocessing step is essential.
+6. RandomForestRegressor
+from sklearn.ensemble import RandomForestRegressor
+Role:
+•A machine learning regression algorithm used to predict the selling price of cars.
+•Builds multiple decision trees and combines their predictions.
+•Provides high prediction accuracy and reduces overfitting compared to a single decision tree.
+7. mean_absolute_error
+from sklearn.metrics import mean_absolute_error
+Role:
+•Measures the average absolute difference between the actual and predicted car prices.
+•A lower MAE indicates better model performance.
+8. mean_squared_error
+from sklearn.metrics import mean_squared_error
+Role:
+•Calculates the average of the squared differences between actual and predicted values.
+Penalizes larger prediction errors more heavily.
+9. r2_score
+from sklearn.metrics import r2_score
+Role:
+•Evaluates how well the regression model explains the variation in car prices.
+•An R² score closer to 1 indicates a highly accurate prediction model.
